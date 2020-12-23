@@ -5,13 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{3D3941DC-F037-4812-8AFC-501B9A0F3F0B}</ProjectGuid>
+    <ProjectGuid>{EC26A660-BF9E-4456-9837-0D3F3A79CB58}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CustomXamarinApp.iOS</RootNamespace>
+    <RootNamespace>CustomXamarin.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>CustomXamarinApp.iOS</AssemblyName>
+    <AssemblyName>CustomXamarin.iOS</AssemblyName>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <ProvisioningType>automatic</ProvisioningType>
@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="Services\DeviceOrientationService.cs" />
     <None Include="Entitlements.plist" />
     <None Include="Info.plist" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -128,9 +129,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\CustomXamarinApp\CustomXamarinApp.csproj">
-      <Project>{D2323C37-B833-4441-80FA-C91E85EC1A0B}</Project>
-      <Name>CustomXamarinApp</Name>
+    <ProjectReference Include="..\CustomXamarin\CustomXamarin.csproj">
+      <Project>{EECB99EF-A72C-443E-B155-A504EFE67BBA}</Project>
+      <Name>CustomXamarin</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>

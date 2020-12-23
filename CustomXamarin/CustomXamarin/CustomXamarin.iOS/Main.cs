@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace CustomXamarinApp.iOS
+namespace CustomXamarin.iOS
 {
     public class Application
     {

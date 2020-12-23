@@ -1,8 +1,9 @@
-﻿using System;
+﻿using CustomXamarin.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace CustomXamarinApp
+namespace CustomXamarin
 {
     public partial class App : Application
     {
@@ -10,7 +11,7 @@ namespace CustomXamarinApp
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new HomePage();
         }
 
         protected override void OnStart()
