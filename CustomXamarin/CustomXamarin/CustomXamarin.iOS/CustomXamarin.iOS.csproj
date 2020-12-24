@@ -63,6 +63,8 @@
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="CustomRender\MyEntryRenderer.cs" />
+    <Compile Include="Effects\FocusEffect.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
     <Compile Include="Services\DeviceOrientationService.cs" />
@@ -124,7 +126,13 @@
     <Reference Include="System.Numerics.Vectors" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="4.6.0.1141" />
+    <PackageReference Include="Prism.Core">
+      <Version>8.0.0.1909</Version>
+    </PackageReference>
+    <PackageReference Include="Prism.Unity.Forms">
+      <Version>8.0.0.1909</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.1829-pre6" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />

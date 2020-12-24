@@ -4,9 +4,9 @@ using Xamarin.Forms.Xaml;
 namespace CustomXamarin.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HomePage : TabbedPage
+    public partial class EffectPage : ContentPage
     {
-        public HomePage()
+        public EffectPage()
         {
             InitializeComponent();
         }

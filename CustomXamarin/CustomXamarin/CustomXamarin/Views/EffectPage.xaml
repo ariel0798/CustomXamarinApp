@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CustomXamarin.Effects"
+             x:Class="CustomXamarin.Views.EffectPage"
+             Title="Effect">
+    <ContentPage.Content>
+        <Entry Text="Effect attached to an Entry" VerticalOptions="Center" HorizontalOptions="Center">
+            <Entry.Effects>
+                <local:FocusEffect/>
+            </Entry.Effects>
+        </Entry>
+    </ContentPage.Content>
+</ContentPage>
